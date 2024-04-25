@@ -3,32 +3,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="forecast.css">
     <title>Forecast App</title>
 </head>
 <body>
+<div class="forecast-app">
     <header>
-        <form>
-            <input type="search" placeholder="Enter a city" required>
-            <input type="submit" value="search">
+        <div class="header-icon">⛅</div>
+        <form class="search-form">
+            <input type="search" placeholder="Enter a city" required class="search-form-input">
+            <input type="submit" value="search" class="search-form-button">
         </form>
 
     </header>
     <main>
-        <div>
-            <h1>Lagos</h1>
-            <p>Wednesday 16:00, partly cloudy</p>
+        <div class="forecast-app-data">
+            <h1 class="forecast-app-city">Lagos</h1>
+            <p class="forecast-app-details">Wednesday 16:00, partly cloudy
             <br>
-            Humidity: 65%, Wind: 19km/h
+            Humidity: <strong>65%,</strong> Wind: <strong>19km/h</strong>
+            </p>
+        
+        <div class="forecast-app-temperature-container">
+        <div class="forecast-app-icon">🌤️</div>
+        <div class="forecast-app-temperature">32</div>
+        <div class="forecast-app-unit">°C</div>
         </div>
-        <div>🌤️ 32°C</div>
+        </div>
     </main>
     <footer>
         This Project was coded by
         <a href="https://github.com/stella-ozemoya" target="_blank">Stella Ozemoya</a>
         is
-        <a href="https://github.com/stella-ozemoya/MyWeather-App.git" target="_blank">open source on Github</a>
+        <a href="https://github.com/stella-ozemoya/MyWeather-App.git" target="_blank">open-source on Github</a>
         and
-        <a href="https://my-weather-app-five-rouge.vercel.app/" target="_blank">hosted on vercel</a>
+        <a href="https://my-weather-app-2kz8.vercel.app/" target="_blank">hosted on vercel</a>
     </footer>
+</div>
 </body>
 </html>
+
+
+
