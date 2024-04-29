@@ -4,26 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="forecast.css">
-    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
     <title>Forecast App</title>
 </head>
 <body>
 <div class="forecast-app">
     <header>
         <div class="header-icon">⛅</div>
-        <form class="search-form">
-            <input type="search" placeholder="Enter a city" required class="search-form-input">
+        <form class="search-form" id="search-form">
+            <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-input">
             <input type="submit" value="search" class="search-form-button">
         </form>
 
     </header>
     <main>
         <div class="forecast-app-data">
-            <h1 class="forecast-app-city">Lagos</h1>
-            <p class="forecast-app-details">Wednesday 16:00, partly cloudy
-            <br>
-            Humidity: <strong>65%,</strong> Wind: <strong>19km/h</strong>
-            </p>
+            <div>
+              <h1 class="forecast-app-city" id="current-city">Lagos</h1>
+              <p class="forecast-app-details">
+                <span id="current-date"></span>14:00, moderate rain <br />
+                Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+              </p>
+              </div>
         
         <div class="forecast-app-temperature-container">
         <div class="forecast-app-icon">🌤️</div>
@@ -42,6 +43,7 @@
     </footer>
 </div>
 </body>
+<script src="forecast.js"></script>
 </html>
 
 
