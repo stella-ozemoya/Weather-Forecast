@@ -10,7 +10,9 @@
 <body>
 <div class="forecast-app">
     <header>
-        <div class="header-icon">⛅</div>
+        <div class="header-icon">
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" >
+        </div>
         <form class="search-form" id="search-form">
             <input type="search" placeholder="Enter a city..." required class="search-form-input" id="search-input">
             <input type="submit" value="search" class="search-form-button">
@@ -30,7 +32,12 @@
               </div>
         
         <div class="forecast-app-temperature-container">
-        <div class="forecast-app-icon">🌤️</div>
+            <div id="icon">
+            <img src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/broken-clouds-day.png" 
+             class="forecast-app-icon">
+            </div>
+            
+        
         <div class="forecast-app-temperature" id="temperature"></div>
         <div class="forecast-app-unit">°C</div>
         </div>
